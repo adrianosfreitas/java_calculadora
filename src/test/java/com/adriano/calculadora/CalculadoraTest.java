@@ -43,10 +43,14 @@ public class CalculadoraTest {
         Assert.assertEquals(result,Integer.valueOf(2));
     }
 
-   // @Test(expected = ArithmeticException.class)
     @Test
     public void testDividirZero() {
         Integer result = this.calculadora.dividir(8,0);
         Assert.assertNull(result);
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void testDividirZero2() {
+        this.calculadora.dividir2(8,0);
     }
 }

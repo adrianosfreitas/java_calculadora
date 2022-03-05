@@ -14,7 +14,7 @@ public class Calculadora {
         return n1 * n2;
     }
 
-    public Integer dividir(Integer n1, Integer n2){
+    public Integer dividir(Integer n1, Integer n2) {
         try {
             return n1 / n2;
         } catch(ArithmeticException ae) {
@@ -22,6 +22,8 @@ public class Calculadora {
             System.out.println("Operação inválida" + ae.getMessage());
             return null;
         }
-
+    }
+    public Integer dividir2(Integer n1, Integer n2) {
+        return n1 / n2;
     }
 }
